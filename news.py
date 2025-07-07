@@ -5,12 +5,13 @@ import feedparser
 from newspaper import Article
 from dotenv import load_dotenv
 
-load_dotenv()  # for api keys
+load_dotenv()  #for api keys
 
 # Look back one week
 cutoff = dt.datetime.utcnow() - dt.timedelta(days=7)
 
 # RSS feeds for LA & national commercial real estate
+# edit these links to change location feed
 RSS_FEEDS = [
     "https://www.bisnow.com/rss/commercial-real-estate-los-angeles",
     "https://www.bisnow.com/rss/national",
