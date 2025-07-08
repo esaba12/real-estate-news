@@ -29,7 +29,7 @@ def run_consolidated_pipeline():
     print(f"✅ Saved audio to {out_path}")
 
 # allows pipeline to run on a schedule
-def schedule_weekly(day: str = "monday", time_str: str = "09:00"): # adjust timing here 
+def schedule_weekly(day: str = "monday", time_str: str = "09:00"): # schedule -- set to default if nothing specific given
     """
     Schedule the pipeline to run weekly on the specified day and time.
     Usage: schedule_weekly('monday', '09:00')

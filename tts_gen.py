@@ -23,7 +23,7 @@ def gen_audio(text: str, out_path="voice.wav") -> str:
     }
     payload = {
         "text": text,
-        "model_id": "eleven_monolingual_v1",
+        "model_id": "eleven_turbo_v2_5", # change model as desired, v2 is default for quick and cheap english generation
         "voice_settings": {
             "stability": 0.5, #adjust as needed
             "similarity_boost": 0.7 #adjust as needed
